@@ -14,6 +14,29 @@
 
 ---
 
+#### Versioning to git and Publishing to artifactory
+
+- run build via: npx lerna run build
+- then: yarn install
+- make commit changes
+- run versioning via: npx lerna version --no-private (--no-private is needed to publish packages other than privates
+  ones)
+- select the necessary version: Patch / Minor / Major (after that will be push to your git repository)
+- make publish to artifactory via yarn (see below FYI): yarn workspaces foreach --all --no-private npm publish
+
+FYI: when publishing via: npx lerna publish --no-private, sometimes there is a problem after publishing with installing
+packages, i.e. with slash decoding (instead of '/' to '%2f'), because of which it doesn't find the path to the package
+and there is the error:
+
+```
+YN0027: @portfolio-yues-it-npm/ui@unknown can't be resolved to a satisfying range
+YN0035: The remote server failed to provide the requested resource
+YN0035: Response Code: 404 (Not Found)
+
+```
+
+---
+
 #### Install a npm package for a specific lerna package
 
 - yarn workspace @portfolio-yues-it-npm/utils add date-fns
