@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "version": "independent",
+  "packages": ["packages/*"],
+  "npmClient": "yarn"
+  // "command": {
+  //   "publish": {
+  //     "registry": "https://some-art.com/artifactory/api/npm/portfolio-yues-it-npm/"
+  //   }
+  // }
+}

@@ -1,0 +1,1 @@
+export {ComponentTwo} from './ComponentTwo';
