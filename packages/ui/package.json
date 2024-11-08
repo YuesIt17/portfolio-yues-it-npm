@@ -15,9 +15,7 @@
   ],
   "dependencies": {
     "@portfolio-yues-it-npm/icons": "file:../icons",
-    "@portfolio-yues-it-npm/utils": "file:../utils",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "@portfolio-yues-it-npm/utils": "file:../utils"
   },
   "scripts": {
     "build": "rollup --config ../../rollup.config.ts --configPlugin @rollup/plugin-typescript",
@@ -75,13 +73,7 @@
     "rollup-plugin-terser": "^7.0.2"
   },
   "peerDependencies": {
-    "@types/react": "*",
-    "@types/react-dom": "*",
-    "react": "*",
-    "react-dom": "*",
-    "rollup": "*",
-    "rollup-plugin-dts": "*",
-    "rollup-plugin-peer-deps-external": "*",
-    "rollup-plugin-terser": "*"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

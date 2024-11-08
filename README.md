@@ -75,3 +75,7 @@ Write in the .yarnrc.yml file:
   "@portfolio-yues-it-npm/ui": "file:../portfolio-yues-it-npm/packages/ui" and then yarn install
 
 ---
+
+#### Run storybook
+
+- yarn storybook
