@@ -1,4 +1,4 @@
-# Project portfolio-yues-it-npm
+# Project Npm package lerna + rollup + jfrog
 
 #### Preparation
 
